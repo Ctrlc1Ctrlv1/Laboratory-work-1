@@ -81,7 +81,7 @@ void append_to_fin_file(char line[]){
 }
 
 int main() {
-    replace_separator("text.txt");
+    replace_separator("Test1.txt");
 
     FILE *file = fopen("temp.txt", "r");
     if (file == NULL) {
