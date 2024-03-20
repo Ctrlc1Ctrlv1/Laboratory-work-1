@@ -49,8 +49,8 @@ cmake_ninja_workdir = N$:/cppProjects/SysProg/LW1/cmake-build-debug/
 
 build cmake_object_order_depends_target_LW1: phony || CMakeFiles/LW1.dir
 
-build CMakeFiles/LW1.dir/main.c.obj: C_COMPILER__LW1_unscanned_Debug N$:/cppProjects/SysProg/LW1/main.c || cmake_object_order_depends_target_LW1
-  DEP_FILE = CMakeFiles\LW1.dir\main.c.obj.d
+build CMakeFiles/LW1.dir/main_1.c.obj: C_COMPILER__LW1_unscanned_Debug N$:/cppProjects/SysProg/LW1/main_1.c || cmake_object_order_depends_target_LW1
+  DEP_FILE = CMakeFiles\LW1.dir\main_1.c.obj.d
   FLAGS = -g -std=gnu2x -fdiagnostics-color=always
   OBJECT_DIR = CMakeFiles\LW1.dir
   OBJECT_FILE_DIR = CMakeFiles\LW1.dir
@@ -63,7 +63,7 @@ build CMakeFiles/LW1.dir/main.c.obj: C_COMPILER__LW1_unscanned_Debug N$:/cppProj
 #############################################
 # Link the executable LW1.exe
 
-build LW1.exe: C_EXECUTABLE_LINKER__LW1_Debug CMakeFiles/LW1.dir/main.c.obj
+build LW1.exe: C_EXECUTABLE_LINKER__LW1_Debug CMakeFiles/LW1.dir/main_1.c.obj
   FLAGS = -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\LW1.dir
