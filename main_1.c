@@ -10,8 +10,9 @@ bool is_separator(char ch) {
 
 bool process_word(char* word, int* max_size) {
     int len = strlen(word);
+    printf("%d\n",len);
     if (len > 30) {
-        printf("Text has a word with the length more than 30 letters: %s\nThe program was stopped", word);
+        printf("Text has a word with the length more than 30 letters: %s\nThe program was stopped\n", word);
         return false; // Word exceeds maximum length
     }
     if (len > *max_size) {
@@ -19,6 +20,7 @@ bool process_word(char* word, int* max_size) {
     }
     return true;
 }
+
 
 int main() {
     system("chcp 65001");
@@ -31,10 +33,12 @@ int main() {
         return EXIT_FAILURE;
     }
 
-    char word[31];
+    char word[32];
     int word_len = 0;
     int max_size = 0;
     char ch;
+
+
 
     // First pass: Find the maximum length of the words
     while ((ch = fgetc(file)) != EOF) {
